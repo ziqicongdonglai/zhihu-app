@@ -1,0 +1,28 @@
+.main {
+	text-align: center;
+}
+li{
+		list-style: none;
+		display: inline-block;
+		margin-right: 10px;
+	}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.nav-item a {
+	color: #eee;
+}
+.nav {
+	background: linear-gradient(to bottom,#086ed5,#055db5);
+}
+router-link {
+		width: 54px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		display: block;
+		color: #eee;
+		text-shadow: 0 1px 1px rgba(0,0,0,.12);
+		font-size: 14px;
+	}
