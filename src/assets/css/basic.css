@@ -1,28 +1,21 @@
-.main {
-	text-align: center;
+* {
+	padding: 0;
+	margin: 0;
 }
-li{
-		list-style: none;
-		display: inline-block;
-		margin-right: 10px;
-	}
+.main {
+	height: 2300px;
+}
 a {
 	text-decoration: none;
 	color: #000;
 }
-.nav-item a {
-	color: #eee;
+li {
+	list-style: none;
 }
-.nav {
-	background: linear-gradient(to bottom,#086ed5,#055db5);
+.container {
+	clear: both;
+	/* background: #f6f6f6; */
+	/* height: 200px; */
+	background: #fff;
+	/* background: blue; */
 }
-router-link {
-		width: 54px;
-		height: 45px;
-		line-height: 45px;
-		text-align: center;
-		display: block;
-		color: #eee;
-		text-shadow: 0 1px 1px rgba(0,0,0,.12);
-		font-size: 14px;
-	}

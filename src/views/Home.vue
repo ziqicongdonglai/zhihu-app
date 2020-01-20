@@ -1,8 +1,6 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-	<ul>
+  <div class="container">
+	<ul class="tab-list">
 		<li>
 			<router-link to="/home/recommoned">推荐</router-link>
 		</li>
@@ -13,13 +11,12 @@
 			<router-link to="/home/hot">热榜</router-link>
 		</li>
 	</ul>
+	<!-- 二级路由入口 -->
+	<router-view />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
 	name: 'home',
 	data() {
@@ -29,4 +26,25 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+	.container {
+		padding-left: 10%;
+		padding-right: 10%;
+		width: 80%;
+		box-sizing: border-box;
+		.tab-list{
+			width: 100%;
+			height: 45px;
+			line-height: 45px;
+			background: #fff;
+			float: left;
+			margin-bottom: 5px;
+			li {
+				float: left;
+				width: 54px;
+			}
+			li:nth-child(1){
+				padding-left: 100px;
+			}
+		}
+	}
 </style>
