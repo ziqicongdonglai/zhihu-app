@@ -10,6 +10,8 @@ import Hot from '../views/Hot.vue'
 import QuestionWaiting from '../views/QuestionWaiting.vue'
 import Login from '../views/Login.vue'
 import RoundTable from '../views/RoundTable.vue'
+import Collection from '../views/Collection.vue'
+import Columns from '../views/Columns.vue'
 
 Vue.use(VueRouter)
 
@@ -60,6 +62,10 @@ const routes = [
 		{
 			path: 'roundtable',
 			component: () => import('../views/RoundTable.vue')
+		},
+		{
+			path: 'collection/hot',
+			component: () => import('../views/Collection.vue')
 		}
 	]
   },
@@ -71,6 +77,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 	component: Login
+  },
+  {
+	  path: '/zhuanlan',
+	  component: Columns
   }
 ]
 
